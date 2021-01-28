@@ -77,7 +77,7 @@ const createTransaction = (
   const state = getState()
 
   if (navigateToTransactionsTab) {
-    dispatch(push(`${SAFELIST_ADDRESS}/${safeAddress}/transactions`))
+    dispatch(push(`${SAFELIST_ADDRESS}/${safeAddress}/gatewayTransactions`))
   }
 
   const ready = await onboardUser()
